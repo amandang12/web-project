@@ -1,0 +1,43 @@
+
+.header img{
+  max-width:1012px
+}
+
+.header .btn {
+  position: absolute;
+  font-family:'Assistant', sans-serif;
+  color: white;
+  background-color:transparent;
+  font-size: 25px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  float: left;
+  word-wrap:normal;
+  top: 90%;
+}
+
+.aboutusbtn {
+  left: 9%;
+}
+
+.topattractionsbtn {
+  left: 21%
+}
+
+.areasbtn {
+  left: 38%
+}
+
+.toptipsbtn {
+  left: 56%
+}
+
+.forumbtn {
+  left: 67%
+}
+
+.contactusbtn {
+  left:76%
+}
