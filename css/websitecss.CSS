@@ -8,36 +8,36 @@
   font-family:'Assistant', sans-serif;
   color: white;
   background-color:transparent;
-  font-size: 25px;
+  font-size: 18px;
   border: none;
   cursor: pointer;
   border-radius: 5px;
   text-align: center;
   float: left;
   word-wrap:normal;
-  top: 90%;
+  top: 100%;
 }
 
 .aboutusbtn {
-  left: 9%;
+  left: 20%;
 }
 
 .topattractionsbtn {
-  left: 21%
+  left: 28%
 }
 
 .areasbtn {
-  left: 38%
+  left: 41%
 }
 
 .toptipsbtn {
-  left: 56%
+  left: 55%
 }
 
 .forumbtn {
-  left: 67%
+  left: 65%
 }
 
 .contactusbtn {
-  left:76%
+  left:75%
 }
