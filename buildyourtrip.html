@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-    <script src="js/jquery-3.3.1.min.jes"></script>
+    <script src="js/quiz.js"></script>
       <style>
 
       body{
@@ -10,24 +10,96 @@
       }
       </style>
     </head>
-      <body>
+
 
   <link rel="stylesheet" type="text/css" href="css/buildyourtrip.CSS">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Assistant:200|Text+Me+One">
 
-  <title>How to London</title>
+  <title>Take Our Quiz!</title>
         <div class="navbar">
-          <a href="#home">Home</a>
-          <a href="#aboutus">About Us</a>
+          <a href="index.html">Home</a>
+          <a href="aboutus.html">About Us</a>
           <a href="#gallery">Gallery</a>
           <a href="#topattractions">Top Attractions</a>
-          <a href="#buildyourtrip">Build Your Trip</a>
+          <a href="buildyourtrip.html">Build Your Trip</a>
           <a href="#forum">Forum</a>
           <a href="#contactus">Contact Us</a>
         </div>
 
-<p> Hello </p>
+<body>
 
-      </body>
+<center><h1>Planning a trip to London? Take this short quiz to find your perfect itinerary!</h1></center>
+
+  <div class="main">
+  <form  id="form1">
+  <p>How long is your trip?</p>
+  <label><input type="radio" name="length" id="three" value="1" /> 3 Days</label>
+  <label><input type="radio" name="length" id="five" value="2" /> 5 Days</label>
+  <label><input type="radio" name="length" id="seven" value="3" /> 7 Days</label>
+
+  <p>What is your travel style?</p>
+  <label><input type="radio" name="budget" id="cheap" value="1" /> Budget</label>
+  <label><input type="radio" name="budget" id="mid" value="2" /> Mid-Range</label>
+  <label><input type="radio"  name="budget" id="luxr" value="3" /> Luxury</label>
+
+  <p>What do you prefer to do on your holiday? (Pick 2!)</p>
+  <tr>
+  <td><label><input type="checkbox" name="activity" id="musicals" value="1" /> Musicals<img src="images/phantom.jpg"></label></td>
+  <td><label><input type="checkbox" name="activity" id="shopping" value="2" /> Shopping<img src="images/shopping.jpg"></label></td>
+  <td><label><input type="checkbox" name="activity" id="nightlife" value="3" /> Nightlife<img src="images/nightlife.jpg"></label></td>
+  <td><label><input type="checkbox" name="activity" id="museums" value="4" /> Museums<img src="images/museum.jpg"></label></td>
+  <td><label><input type="checkbox" name="activity" id="nature" value="5" /> Nature<img src="images/nature.jpg"></label></td>
+  </tr>
+
+  <button type="submit" value="Submit">Submit</button>
+
+  </form>
+
+  <p id="answer"></p>
+  <p id="answer2"></p>
+  </div>
+  <script>
+
+  document.getElementById("form1").onsubmit=function() {
+checkboxes = document.querySelectorAll("input[name='genre']:checked");
+
+for( i=0; i < checkboxes.length; i++ ) {
+  document.getElementById("answer").innerHTML += checkboxes[i].value + ", ";
+}
+	   return false;
+	   }
+  	   document.getElementById("form1").onsubmit=function() {
+
+  	   length = parseInt(document.querySelector('input[name = "length"]:checked').value);
+       budget = parseInt(document.querySelector('input[name = "budget"]:checked').value);
+       activity = parseInt(document.querySelector('input[name = "activity"]:checked').value);
+
+  	   total= length + budget + activity;
+
+  	   document.getElementById("answer").innerHTML = total;
+
+  	   if(total < 4) {
+      document.getElementById("answer").innerHTML = 'Click <a href="https://google.com">here</a>';
+
+  }
+
+     if(total >=4 && total < 7) {
+  document.getElementById("answer2").innerHTML = "You got Spoon.";
+  }
+
+  	if(total >=7) {
+  document.getElementById("answer2").innerHTML = "You got Willie Nelson.";
+  }
+
+
+
+  	   return false;
+  	   }
+
+
+  </script>
+
+
+</body>
 
 </html>
