@@ -44,7 +44,7 @@ h2{
 
 .main {
 width: 100%;
-max-height: 75%;
+max-height: 70%;
 display: inline-block;
 position: absolute;
 padding: 0px 15px 0px 15px;
@@ -65,31 +65,21 @@ overflow-y: scroll
   top:0;
 }
 
-.main label{
-  font-size: 15px;
-  font-family:'Assistant', sans-serif;
-  color: black;
-  font-weight: bold;
-}
-
-label {
-  width: 150px;
-  display: inline-table;
-}
-
-label img{
-  object-fit: cover;
-  display: block;
-  width: 180px;
-  height: 180px;
-}
-
 button {
   display: block;
   font-family:'Assistant', sans-serif;
   color: black;
   font-weight:bold;
   margin-top: 20px;
+}
+
+a.button {
+  display: block;
+  font-family:'Assistant', sans-serif;
+  color: white;
+  font-weight:bold;
+  margin-top: 20px;
+  appearance; button;
 }
 
 table {
@@ -103,4 +93,18 @@ table img{
   display: block;
   width: 100px;
   height: 120px;
+}
+
+th {
+  text-align: center;
+  padding: 10px 20px;
+  margin: auto;
+  font-weight: bolder;
+  font-size: 25px;
+}
+
+td {
+  text-align: justify;
+  padding: 5px 10px;
+  margin: auto;
 }
