@@ -28,8 +28,8 @@
         </div>
 
 <body>
-<center><h1>Planning a trip to London? Take this short quiz to find your perfect itinerary!</h1></center>
 
+<center><h1>Planning a trip to London? Take this short quiz to find your perfect itinerary!</h1></center>
   <div class="main">
   <form  id="form1">
   <p>How long is your trip?</p>
@@ -77,24 +77,22 @@ for( i=0; i < checkboxes.length; i++ ) {
   	   document.getElementById("answer").innerHTML = total;
 
   	   if(total < 4) {
-      document.getElementById("answer").innerHTML = 'Click <a href="https://google.com">here</a>';
+      document.getElementById("answer").innerHTML = 'Click <a href="itinerary.html">here</a>';
 
   }
 
      if(total >=4 && total < 7) {
-  document.getElementById("answer2").innerHTML = "You got Spoon.";
+  document.getElementById("answer").innerHTML = 'Click <a href="itinerary.html">here</a>';
   }
 
   	if(total >=7) {
-  document.getElementById("answer2").innerHTML = "You got Willie Nelson.";
+  document.getElementById("answer").innerHTML = 'Click <a href="itinerary.html">here</a>';
   }
 
 
 
   	   return false;
   	   }
-
-
   </script>
 
 
